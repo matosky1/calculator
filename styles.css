@@ -1,0 +1,185 @@
+#page{
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+ 
+}
+#admin{
+  flex-basis: 30%;
+  padding-right: 5px;
+
+ 
+}
+.content{
+  padding-left: 20px;
+}
+#checkout{
+  flex-basis: 40%;
+  padding-right: 5px;
+}
+#receipt{
+  flex-basis: 30%;
+  padding-right: 5px;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: gainsboro;
+}
+h1{
+  background-color: gray;
+  color: white;
+  text-align: center;
+ 
+}
+.content  p{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+input{
+  background-color: white;
+  border: 2px solid gainsboro;
+}
+input[type="text"]{
+  width: 150px;
+  height: 30px;
+  margin-left: 120px;
+  /* background-color: white; */
+}
+select{
+  width: 100px;
+  height:30px;
+}
+button{
+  width: 100px;
+  height: 30px;
+  border: 2px solid black;
+  text-align: center;
+  background-color: gray;
+}
+button:hover{
+  color: white;
+}
+#admin .addprice{
+  margin-left: 1px;
+ 
+}
+/* for my new transaction button */
+#page #checkout .content2  .new{
+  margin-top: 50px;
+  margin-left: 200px;
+  width:  200px;
+  margin-bottom: 20px;
+  /* background-color: brown; */
+}
+#grid{
+  margin-top: 40px;
+  margin-left: 200px;
+  display: grid;
+  grid-template-columns: 70px 70px 70px;
+  gap: 10px;
+}
+#grid .btn{
+  background-color: gray;
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+}
+#grid .btn:hover{
+  color: white;
+}
+/* for my input box in checkout */
+#checkout input{
+  width: 40px;
+  margin-left: 10px;
+  margin-right: 80px;
+}
+#checkout p{
+  padding-bottom: 10px;
+}
+#checkout select{
+  width: 120px;
+  margin-right: 50px;;
+}
+#page #checkout .content2 .cart{
+margin-left: 60px;
+width: 150px;
+
+}
+#page #checkout .content2 .pay{
+  width: 150px;
+  margin-top: 200px;  
+  margin-left: 420px;;
+}
+
+/* for my receipt */
+table{
+  margin-top: 50px;
+  background-color: white;
+}
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+
+}
+#receipt .content3{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+td, #products, #perprice, #units, #price{
+  text-align: center;
+}
+
+/* Your existing CSS */
+
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  #page {
+      flex-direction: column;
+  }
+  #admin, #checkout, #receipt {
+      flex-basis: auto;
+      padding-right: 0;
+  }
+  .content, .content2, .content3 {
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+  #admin .addprice {
+      margin-left: 0;
+  }
+  #page #checkout .content2 .new {
+      margin-left: 0;
+      width: auto;
+  }
+  #grid {
+      margin-left: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  }
+  #grid .btn {
+      padding: 8px;
+  }
+  #checkout input {
+      width: 30px;
+      margin-left: 5px;
+      margin-right: 20px;
+  }
+  #checkout select {
+      width: 100px;
+      margin-right: 20px;
+  }
+  #page #checkout .content2 .cart {
+      margin-left: 0;
+      width: auto;
+  }
+  #page #checkout .content2 .pay {
+      margin-top: 20px;
+      margin-left: 0;
+  }
+  table {
+      margin-top: 30px;
+  }
+}

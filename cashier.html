@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+    <!-- my admin section -->
+    <div id="page">
+       
+        <div id="admin">
+            <h1>Admin</h1>
+            <section class="content">
+                <p>Add a new product</p>
+           
+            <input type="text" id="product" placeholder="product name">
+            <button id="addpro"> Add product</button>
+           
+            <br><br>
+            <p>Select a product then add the price per unit</p>
+            <select name="admindrop" id="admindrop">
+               
+             
+            </select>
+            <input type="text" class="addprice" id="addpr" placeholder="price">
+            <button id="addpricebtn" onclick="addPrice()">Add price</button>  
+            </section>
+         
+        </div>
+       
+        <!-- my checkout section -->
+        <div id="checkout">
+            <h1>Checkout</h1>
+            <section class="content2">
+                <button class="new" id="new">New Transaction</button>
+                <p>Select a product then type the number of units</p>
+                <select name="perunit" id="perunit">
+                   
+                </select>
+                <label for="unit">Unit:</label>
+                <input type="text" id="unit" name="display">
+                <button class="cart" id="addtocart">Add to Cart</button>
+                 <!-- input grid to enter calculator -->
+                <div id="grid">
+                    <input type="button" class="btn" value="0" onclick="display.value +='0' ">
+                    <input type="button" class="btn" value="1" onclick="display.value +='1' ">
+                    <input type="button" class="btn" value="2" onclick="display.value +='2' ">
+                    <input type="button" class="btn" value="3" onclick="display.value +='3' ">
+                    <input type="button" class="btn" value="4" onclick="display.value +='4' ">
+                    <input type="button" class="btn" value="5" onclick="display.value +='5' ">
+                    <input type="button" class="btn" value="6" onclick="display.value +='6' ">
+                    <input type="button" class="btn" value="7" onclick="display.value +='7' ">
+                    <input type="button" class="btn" value="8" onclick="display.value +='8' ">
+                    <input type="button" class="btn" value="9" onclick="display.value +='9' ">
+                </div>
+                 <button class="pay" id="pay">Pay</button>
+                 <!-- display athanking message when clicked --></section>
+           
+        </div>
+    <!-- My receipt section -->
+        <div id="receipt">
+            <h1>Receipt</h1>
+            <section class="content3">
+                <table  id="table" style="width:100%">
+                    <tr>
+                        <th colspan="4" style="text-align: left;" id="date">
+                        Date:
+                        <br>
+                        Time:
+                    </th>
+   
+                    </tr>
+                   
+                    <tr>
+                        <th id="products">Product</th>
+                        <th id="perprice">S/unit</th>
+                        <th id="units">Unit(s)</th>
+                        <th id="price">Price</th>
+                    </tr>
+                 
+                    <tr>
+                        <th colspan="4" style="text-align: left;" id="total">Total Price:</th>
+                    </tr>
+                    <tr>
+                        <th colspan="4" style="text-align: left;" id="tax">Taxes:</th>
+                    </tr>
+                    <tr>
+                        <th colspan="4" style="text-align: left;" id="due">Amount Due:</th>
+                    </tr>
+       
+                </table>
+            </section>
+         
+        </div>
+       
+    </div>
+ 
+ 
+   
+    <script src="script.js"></script>
+</body>
+</html>
